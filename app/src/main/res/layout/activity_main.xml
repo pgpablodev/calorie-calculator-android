@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="456dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSexo"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rbHombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rbHombre"
+            app:layout_constraintTop_toBottomOf="@+id/tvSexo" />
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:text="Hombre"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/tvMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rbMujer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rbMujer"
+            app:layout_constraintTop_toBottomOf="@+id/tvHombre" />
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:text="Mujer"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbHombre" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDatos"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\nDatos Personales"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatos"
+        />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEdad" />
+
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/etEdad"
+        app:layout_constraintTop_toBottomOf="@+id/tvAltura" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura (cm)"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toEndOf="@+id/etEdad"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatos" />
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeso" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso (kg)"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatos" />
+
+    <TextView
+        android:id="@+id/tvObjetivo"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\nObjetivo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAltura"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvObjetivo"
+        tools:layout_editor_absoluteX="-69dp">
+
+        <TextView
+            android:id="@+id/tvPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perder peso"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbPP"
+            android:text="-1.2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/tvPPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perder peso lentamente"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbPPL"
+            android:text="-1.1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/tvMantenimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantener el peso"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbMantenimiento"
+            android:text="1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/tvAPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aumentar peso lentamente"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbAPL"
+            android:text="1.1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/tvAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aumentar peso"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbAP"
+            android:text="1.2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvEntrenos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\nEntrenamientos a la semana"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgObjetivo" />
+
+    <RadioGroup
+        android:id="@+id/rgEntrenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrenos">
+
+        <TextView
+            android:id="@+id/tvPoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poco o ningún ejercicio"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbPoco"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="1.2" />
+
+        <TextView
+            android:id="@+id/tvLigero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio ligero (1-3 días por semana)"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbLigero"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="1.375" />
+
+        <TextView
+            android:id="@+id/tvModerado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio moderado (3-5 días a la semana) "
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbModerado"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="1.55" />
+
+        <TextView
+            android:id="@+id/tvFuerte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio fuerte (6-7 días a la semana)"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbFuerte"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="1.725" />
+
+        <TextView
+            android:id="@+id/tvIntenso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio muy fuerte (dos veces al día, entrenamientos muy duros) "
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbIntenso"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="1.9" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="182dp"
+        android:layout_height="102dp"
+        android:text="CALCULAR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgEntrenos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
