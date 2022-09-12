@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/CalorieCalculator/app/src/main/res/drawable/ic_reload.xml" value="0.188" />
         <entry key="..\:/AndroidStudioProjects/CalorieCalculator/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/CalorieCalculator/app/src/main/res/layout/result.xml" value="0.365625" />
         <entry key="..\:/AndroidStudioProjects/CalorieCalculator/app/src/main/res/layout/result_screen.xml" value="0.365625" />

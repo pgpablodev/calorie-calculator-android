@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tvRes"
+        android:textColor="@color/yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resultados"
@@ -21,6 +22,7 @@
 
     <TextView
         android:id="@+id/tvMetBasal"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Metabolismo basal\n      0000.00 kcal"
@@ -30,22 +32,11 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
-
-    <TextView
-        android:id="@+id/tvCObj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Requerimiento objetivo\n         0000.00 kcal"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.274" />
 
     <TextView
         android:id="@+id/tvCMan"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
@@ -57,5 +48,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCObj"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCObj"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requerimiento objetivo\n         0000.00 kcal"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <ImageView
+        android:id="@+id/ivReload"
+        android:layout_width="166dp"
+        android:layout_height="145dp"
+        android:src="@drawable/ic_reload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCMan"
+        app:layout_constraintVertical_bias="0.493" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
